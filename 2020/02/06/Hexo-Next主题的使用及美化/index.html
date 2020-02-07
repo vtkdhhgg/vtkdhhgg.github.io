@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Helvetica:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|Amita:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"default"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="Hexo Next主题的使用及美化。。。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo Next主题的使用及美化">
+<meta property="og:url" content="http://yoursite.com/2020/02/06/Hexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E7%BE%8E%E5%8C%96/index.html">
+<meta property="og:site_name" content="是个博客">
+<meta property="og:description" content="Hexo Next主题的使用及美化。。。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2019/09/15/2ogAV3iZlXtKHzk.png">
+<meta property="article:published_time" content="2020-02-06T06:53:21.000Z">
+<meta property="article:modified_time" content="2020-02-06T06:53:21.000Z">
+<meta property="article:author" content="侠客不行">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="next">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/09/15/2ogAV3iZlXtKHzk.png">
+
+<link rel="canonical" href="http://yoursite.com/2020/02/06/Hexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E7%BE%8E%E5%8C%96/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Hexo Next主题的使用及美化 | 是个博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">是个博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">是个程序员的博客</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">6</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">6</span></a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-fw fa-heartbeat"></i>公益 404</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/vtkdhhgg" class="github-corner" title="来看看呗~~" aria-label="来看看呗~~" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/06/Hexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E7%BE%8E%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="侠客不行">
+      <meta itemprop="description" content="不疯魔，不成活">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="是个博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo Next主题的使用及美化
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-06 14:53:21" itemprop="dateCreated datePublished" datetime="2020-02-06T14:53:21+08:00">2020-02-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/02/06/Hexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E7%BE%8E%E5%8C%96/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/06/Hexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E7%BE%8E%E5%8C%96/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Hexo Next主题的使用及美化。。。</p>
+<a id="more"></a>
+
+<h1 id="Hexo-Next主题的使用及美化"><a href="#Hexo-Next主题的使用及美化" class="headerlink" title="Hexo Next主题的使用及美化"></a>Hexo Next主题的使用及美化</h1><h2 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h2><h3 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令:"></a>hexo常用命令:</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"title"</span>  # 生成新文章: \source\_posts\title.md</span><br><span class="line"></span><br><span class="line">hexo new<span class="built_in"> page </span><span class="string">"title"</span>  # 生成新的页面, 后面可在主题配置文件中配置页面生成文章或页面的模板放在博客文件夹根目录下的 scaffolds/ 文件夹里面, 文章对应的是 post.md , 页面对应的是page.md, 草稿的是draft.md</span><br><span class="line"></span><br><span class="line">hexo init [folder] # 初始化一个网站. 如果没有设置 folder , Hexo 默认在目前的文件夹建立网站</span><br><span class="line">hexo new [layout] &lt;title&gt; # 新建一篇文章. 如果没有设置 layout 的话, 默认使用 _config.yml 中的 default_layout 参数代替. 如果标题包含空格的话, 请使用引号括起来</span><br><span class="line"></span><br><span class="line">hexo version # 查看版本</span><br><span class="line">hexo clean # 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo g # 等于hexo generate # 生成静态文件</span><br><span class="line">hexo generate --watch # 监视文件变动，只有变动的文件才会写入。</span><br><span class="line">hexo s # 等于hexo<span class="built_in"> server </span># 本地预览</span><br><span class="line">hexo d # 等于hexo deploy # 部署, 可与hexo g合并为 hexo d -g</span><br><span class="line">git<span class="built_in"> config </span>--global user.name <span class="string">"YOURUSERNAME"</span>  # 修改git用户名</span><br><span class="line">git<span class="built_in"> config </span>--global user.email <span class="string">"YOUREMAIL"</span> # 修改git邮箱</span><br><span class="line"></span><br><span class="line">npm uninstall XXX,卸载某个插件 例如：</span><br><span class="line">npm uninstall hexo-generator-sitemap --save</span><br><span class="line">npm uninstall hexo-generator-baidu-sitemap --save</span><br><span class="line">npm uninstall hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="使用图片"><a href="#使用图片" class="headerlink" title="使用图片"></a>使用图片</h2><p>这个在我的另一篇文章中专门写到。</p>
+<p><strong>Hexo中的图片</strong></p>
+<h2 id="添加-一言"><a href="#添加-一言" class="headerlink" title="添加 一言"></a>添加 一言</h2><p>将下面这段代码放入页面内需要展示一句话的位置即可.<br><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://api.uixsj.cn/hitokoto/w.php?code=js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;xsjhitokoto&quot;&gt;&lt;script&gt;xsjhitokoto()&lt;/script&gt;&lt;/div&gt;</code><br>中英文版 使用方法同上<br><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://api.uixsj.cn/hitokoto/en.php?code=js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;enhitokoto&quot;&gt;&lt;script&gt;enhitokoto()&lt;/script&gt;&lt;/div&gt;</code><br>你可以放在文章中,侧栏中.</p>
+<p>示例（中英文版）：</p>
+<hr>
+<p>A friend without faults will never be found。没有缺点的朋友是永远找不到的。</p>
+<hr>
+<p><img src="https://i.loli.net/2019/09/15/2ogAV3iZlXtKHzk.png" alt="一言"></p>
+<h2 id="Hexo-在subtile和description中实现换行"><a href="#Hexo-在subtile和description中实现换行" class="headerlink" title="Hexo 在subtile和description中实现换行"></a>Hexo 在subtile和description中实现换行</h2><p>这个功能是在写代码的时候用的,例如你想说明一句话时候用到换行显示该怎么办.<br>这里用我的打赏部分做个示例.<br>习惯更改的文本描述用双引号括起来,同时实现<br>即可达到换行目的</p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法:"></a>语法:</h3><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">reward_comment:</span> <span class="string">"您的支持将用于博客的维护费用.&lt;br&gt;例如：域名续费一年需26￥"</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="添加lazyload-图片懒加载"><a href="#添加lazyload-图片懒加载" class="headerlink" title="添加lazyload 图片懒加载"></a>添加lazyload 图片懒加载</h2><p>懒加载,简言之就是在html加载的时候,若果img标签的src是有内容的,在加载的过程中,img标签就回去请求这个图片,直到加载完,我们的浏览器的刷新那个图标才会停止转动,也就是才算请求完<br>懒加载能够在你鼠标不动的时候只加载目前电脑窗口内需要展示的图片,电脑屏幕内部需要展示的图片就暂时不加载.<br>从而达到加快访问网站速度的效果.</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置:"></a>配置:</h3><p>在你的 Hexo 目录下,执行以下命令：</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-lazyload-<span class="built_in">image</span> --<span class="built_in">save</span></span><br></pre></td></tr></table></figure>
+
+<p>然后在你的 Hexo 目录的配置文件 _config.yml 中任意位置添加配置:</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">lazyload:</span>  <span class="string">enable:</span> <span class="literal">true</span>  <span class="string">onlypost:</span> <span class="literal">false</span>  <span class="string">loadingImg:</span></span><br></pre></td></tr></table></figure>
+
+<p>参数说明:<br><strong>onlypost:</strong><br>是否仅文章中的图片做懒加载, 如果为 false, 则主题中的其他图片, 也会做懒加载, 如头像, logo 等任何图片.<br><strong>loadingImg - 图片未加载时的代替图:</strong><br>不填写使用默认加载图片,如果需要自定义,添填入loading图片地址.<br>如果是本地图片,不要忘记把图片添加到你的主题目录下. Next 主题需将图片放到<code>~\themes\next\source\images</code>目录下,然后引用时: loadingImg: /images/图片文件名</p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">猜你喜欢</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\12\19\2019-12-19-hexo-标签插件\" rel="bookmark">hexo-标签插件</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2019\12\19\hexo基本使用\" rel="bookmark">hexo基本使用</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\02\06\Hexo与图片\" rel="bookmark">Hexo与图片</a></div>
+    </li>
+  </ul>
+
+        <div class="reward-container">
+  <div>您的支持将用于网站的维护~</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="侠客不行 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="侠客不行 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>侠客不行
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2020/02/06/Hexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E7%BE%8E%E5%8C%96/" title="Hexo Next主题的使用及美化">http://yoursite.com/2020/02/06/Hexo-Next主题的使用及美化/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+            <div class="social-item">
+              <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+                <span class="icon">
+                  <i class="fa fa-wechat"></i>
+                </span>
+
+                <span class="label">微信公众号</span>
+              </a>
+            </div>
+
+            <div class="social-item">
+              <a target="_blank" class="social-link" href="/atom.xml">
+                <span class="icon">
+                  <i class="fa fa-rss"></i>
+                </span>
+
+                <span class="label">RSS</span>
+              </a>
+            </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+              <a href="/tags/next/" rel="tag"><i class="fa fa-tag"></i> next</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/06/Hexo%E4%B8%8E%E5%9B%BE%E7%89%87/" rel="prev" title="Hexo与图片">
+      <i class="fa fa-chevron-left"></i> Hexo与图片
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/05/vscode%E5%88%9D%E6%8E%A2/" rel="next" title="vscode初探">
+      vscode初探 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-Next主题的使用及美化"><span class="nav-number">1.</span> <span class="nav-text">Hexo Next主题的使用及美化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用的命令"><span class="nav-number">1.1.</span> <span class="nav-text">常用的命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo常用命令"><span class="nav-number">1.1.1.</span> <span class="nav-text">hexo常用命令:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用图片"><span class="nav-number">1.2.</span> <span class="nav-text">使用图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加-一言"><span class="nav-number">1.3.</span> <span class="nav-text">添加 一言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-在subtile和description中实现换行"><span class="nav-number">1.4.</span> <span class="nav-text">Hexo 在subtile和description中实现换行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">1.4.1.</span> <span class="nav-text">语法:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加lazyload-图片懒加载"><span class="nav-number">1.5.</span> <span class="nav-text">添加lazyload 图片懒加载</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">1.5.1.</span> <span class="nav-text">配置:</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="侠客不行"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">侠客不行</p>
+  <div class="site-description" itemprop="description">不疯魔，不成活</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1487110067&website=www.oicqzone.com" title="QQ → tencent:&#x2F;&#x2F;AddContact&#x2F;?fromId&#x3D;45&amp;fromSubId&#x3D;1&amp;subcmd&#x3D;all&amp;uin&#x3D;1487110067&amp;website&#x3D;www.oicqzone.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-qq"></i>QQ</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/vtkdhhgg" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;vtkdhhgg" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:Smith.ben97@outlook.com" title="E-Mail → mailto:Smith.ben97@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      传送门
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="/404/index.html" title="&#x2F;404&#x2F;index.html">公益404</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">蜀ICP备19041649 </a>
+  </div>
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">侠客不行</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.1
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: false,
+      notify: false,
+      appId: 'Wqyvq9iBFvJKxDydROO2l33r-gzGzoHsz',
+      appKey: 'W3wRAVtMTvd3o9nQHHkdoaaT',
+      placeholder: "快来评论吧，支持 Markdown 语法",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: false,
+      lang: 'zh-cn' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
