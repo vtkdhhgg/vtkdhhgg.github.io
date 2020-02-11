@@ -2,82 +2,38 @@
 <search>
   <entry>
     <title>Hexo与图片</title>
-    <url>/2020/02/06/Hexo%E4%B8%8E%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<h3 id="使用markdown方式插入图片"><a href="#使用markdown方式插入图片" class="headerlink" title="使用markdown方式插入图片"></a>使用markdown方式插入图片</h3><p>当你打开[^文章资源文件夹功能]后，你把一个 <code>example.jpg</code> 图片放在了你的资源文件夹中，如果通过使用相对路径的常规 markdown 语法 <code>![](/example.jpg)</code> ，它将 <em>不会</em> 出现在首页上。（但是它会在文章中按你期待的方式工作）</p>
-<p><code>![](example.jpg)</code></p>
-<p><img src="example.jpg" alt="你看是不是没有图片"></p>
-<a id="more"></a>
-
-<p>往上看！☝</p>
-<h3 id="使用官方提供的标签（Hexo-3及以上）"><a href="#使用官方提供的标签（Hexo-3及以上）" class="headerlink" title="使用官方提供的标签（Hexo 3及以上）"></a>使用官方提供的标签（Hexo 3及以上）</h3><figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">asset_path</span> slug %&#125;</span><span class="xml"> 显示图片的路径</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">asset_img</span> slug [title] %&#125;</span><span class="xml"> 可以使用</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">asset_link</span> slug [title] %&#125;</span><span class="xml"> 已连接的方式查看图片</span></span><br></pre></td></tr></table></figure>
-
-<p>显示图片路径：/2020/02/06/Hexo%E4%B8%8E%E5%9B%BE%E7%89%87/example.jpg</p>
-<p>显示图片：<img src="/2020/02/06/Hexo%E4%B8%8E%E5%9B%BE%E7%89%87/example.jpg" class="" title="[肖申克的救赎]"></p>
-<p>已连接的方式查看图片：<a href="/2020/02/06/Hexo%E4%B8%8E%E5%9B%BE%E7%89%87/example.jpg" title="[肖申克的救赎]">[肖申克的救赎]</a> </p>
-<h2 id="使用图床"><a href="#使用图床" class="headerlink" title="使用图床"></a>使用图床</h2><p>使用 <strong>GitHub</strong> 来作图床：</p>
-<p><strong>Example：</strong></p>
-<img src="https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred%20red%20flag.jpg">
-
-<p>哈哈：[<a href="https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred%20red%20flag.jpg]" target="_blank" rel="noopener">https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred%20red%20flag.jpg]</a></p>
-<hr>
-<p>![五星红旗_武汉加油！！！](<a href="https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred" target="_blank" rel="noopener">https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred</a> red flag.jpg)</p>
-<hr>
-<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">`&#123;% img [<span class="keyword">class</span> <span class="symbol">names</span>] /<span class="symbol">path</span>/<span class="symbol">to</span>/<span class="symbol">image</span> [<span class="symbol">width</span>] [<span class="symbol">height</span>] '"<span class="symbol">title</span> <span class="symbol">text</span>" "<span class="symbol">alt</span> <span class="symbol">text</span>"' %&#125;`</span><br></pre></td></tr></table></figure>
-
-<img src="https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred%20red%20flag.jpg" class="[五星红旗]" width="100" height="50" title="中国国旗" alt="五星红旗">
-
-
-
-
-
-
-
-
-
-
-
-<hr>
-<p><strong>脚注：</strong></p>
-<p>[^文章资源文件夹功能]: 在站点的<code>_config.yml</code>配置文件中，修改为 <code>post_asset_folder: true</code>。</p>
-]]></content>
+    <url>/posts/ae242970/</url>
+    <content><![CDATA[<div class="fnScope" scope="1"><h2 id="使用markdown方式插入图片">使用markdown方式插入图片</h2><p>当你打开 <strong>文章资源文件夹功能</strong> 后，你把一个 <code>example.jpg</code> 图片放在了你的资源文件夹中，如果通过使用相对路径的常规 markdown 语法 <code>![](/example.jpg)</code> ，它将 <em>不会</em> 出现在首页上。（但是它会在文章中按你期待的方式工作）</p><p><code>![](example.jpg)</code></p><figure>
+<img data-src="example.jpg" alt><figcaption>你看是不是没有图片</figcaption>
+</figure><a id="more"></a><p>往上看！☝</p><h2 id="使用官方提供的标签hexo-3及以上">使用官方提供的标签（Hexo 3及以上）</h2><figure class="highlight django"><table><tbody><tr><td class="code"><pre><span class="line"><span class="template-tag">{% <span class="name">asset_path</span> slug %}</span><span class="xml"> 显示图片的路径</span></span><br><span class="line"><span class="template-tag">{% <span class="name">asset_img</span> slug [title] %}</span><span class="xml"> 可以使用</span></span><br><span class="line"><span class="template-tag">{% <span class="name">asset_link</span> slug [title] %}</span><span class="xml"> 已连接的方式查看图片</span></span><br></pre></td></tr></tbody></table></figure><p>显示图片路径：/posts/ae242970/example.jpg</p><p>显示图片：<img data-src="/posts/ae242970/example.jpg" class title="[肖申克的救赎]"></p><p>已连接的方式查看图片：<a href="/posts/ae242970/example.jpg" title="[肖申克的救赎]">[肖申克的救赎]</a></p><h2 id="使用图床">使用图床</h2><p>使用 <strong>GitHub</strong> 来作图床：</p><p><strong>Example：</strong></p><table style="width:10%;">
+<colgroup>
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><img data-src="https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred%20red%20flag.jpg"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>哈哈：[ https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred%20red%20flag.jpg ]</td>
+</tr>
+</tbody>
+</table><figure>
+<img data-src="https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred%20red%20flag.jpg" alt><figcaption>五星红旗_武汉加油！！！</figcaption>
+</figure><hr><figure class="highlight angelscript"><table><tbody><tr><td class="code"><pre><span class="line">`{% img [<span class="keyword">class</span> <span class="symbol">names</span>] /<span class="symbol">path</span>/<span class="symbol">to</span>/<span class="symbol">image</span> [<span class="symbol">width</span>] [<span class="symbol">height</span>] &apos;&quot;<span class="symbol">title</span> <span class="symbol">text</span>&quot; &quot;<span class="symbol">alt</span> <span class="symbol">text</span>&quot;&apos; %}`</span><br></pre></td></tr></tbody></table></figure><img data-src="https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/Five-Starred%20red%20flag.jpg" class="[五星红旗]" width="100" height="50" title="中国国旗" alt="五星红旗"><script src="https://unpkg.com/tippy.js@2.0.2/dist/tippy.all.min.js"></script><script src="/js/attachTooltips.js"></script><link rel="stylesheet" href="/css/tippy.css"></div>]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
     <title>Hexo Next主题的使用及美化</title>
-    <url>/2020/02/06/Hexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<p>Hexo Next主题的使用及美化。。。</p>
-<a id="more"></a>
-
-<h1 id="Hexo-Next主题的使用及美化"><a href="#Hexo-Next主题的使用及美化" class="headerlink" title="Hexo Next主题的使用及美化"></a>Hexo Next主题的使用及美化</h1><h2 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h2><h3 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令:"></a>hexo常用命令:</h3><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">"title"</span>  # 生成新文章: \source\_posts\title.md</span><br><span class="line"></span><br><span class="line">hexo new<span class="built_in"> page </span><span class="string">"title"</span>  # 生成新的页面, 后面可在主题配置文件中配置页面生成文章或页面的模板放在博客文件夹根目录下的 scaffolds/ 文件夹里面, 文章对应的是 post.md , 页面对应的是page.md, 草稿的是draft.md</span><br><span class="line"></span><br><span class="line">hexo init [folder] # 初始化一个网站. 如果没有设置 folder , Hexo 默认在目前的文件夹建立网站</span><br><span class="line">hexo new [layout] &lt;title&gt; # 新建一篇文章. 如果没有设置 layout 的话, 默认使用 _config.yml 中的 default_layout 参数代替. 如果标题包含空格的话, 请使用引号括起来</span><br><span class="line"></span><br><span class="line">hexo version # 查看版本</span><br><span class="line">hexo clean # 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo g # 等于hexo generate # 生成静态文件</span><br><span class="line">hexo generate --watch # 监视文件变动，只有变动的文件才会写入。</span><br><span class="line">hexo s # 等于hexo<span class="built_in"> server </span># 本地预览</span><br><span class="line">hexo d # 等于hexo deploy # 部署, 可与hexo g合并为 hexo d -g</span><br><span class="line">git<span class="built_in"> config </span>--global user.name <span class="string">"YOURUSERNAME"</span>  # 修改git用户名</span><br><span class="line">git<span class="built_in"> config </span>--global user.email <span class="string">"YOUREMAIL"</span> # 修改git邮箱</span><br><span class="line"></span><br><span class="line">npm uninstall XXX,卸载某个插件 例如：</span><br><span class="line">npm uninstall hexo-generator-sitemap --save</span><br><span class="line">npm uninstall hexo-generator-baidu-sitemap --save</span><br><span class="line">npm uninstall hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="使用图片"><a href="#使用图片" class="headerlink" title="使用图片"></a>使用图片</h2><p>这个在我的另一篇文章中专门写到。</p>
-<p><strong>Hexo中的图片</strong></p>
-<h2 id="添加-一言"><a href="#添加-一言" class="headerlink" title="添加 一言"></a>添加 一言</h2><p>将下面这段代码放入页面内需要展示一句话的位置即可.<br><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://api.uixsj.cn/hitokoto/w.php?code=js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;xsjhitokoto&quot;&gt;&lt;script&gt;xsjhitokoto()&lt;/script&gt;&lt;/div&gt;</code><br>中英文版 使用方法同上<br><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://api.uixsj.cn/hitokoto/en.php?code=js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;enhitokoto&quot;&gt;&lt;script&gt;enhitokoto()&lt;/script&gt;&lt;/div&gt;</code><br>你可以放在文章中,侧栏中.</p>
-<p>示例（中英文版）：</p>
-<hr>
-<p>A friend without faults will never be found。没有缺点的朋友是永远找不到的。</p>
-<hr>
-<p><img src="https://i.loli.net/2019/09/15/2ogAV3iZlXtKHzk.png" alt="一言"></p>
-<h2 id="Hexo-在subtile和description中实现换行"><a href="#Hexo-在subtile和description中实现换行" class="headerlink" title="Hexo 在subtile和description中实现换行"></a>Hexo 在subtile和description中实现换行</h2><p>这个功能是在写代码的时候用的,例如你想说明一句话时候用到换行显示该怎么办.<br>这里用我的打赏部分做个示例.<br>习惯更改的文本描述用双引号括起来,同时实现<br>即可达到换行目的</p>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法:"></a>语法:</h3><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">reward_comment:</span> <span class="string">"您的支持将用于博客的维护费用.&lt;br&gt;例如：域名续费一年需26￥"</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h2 id="添加lazyload-图片懒加载"><a href="#添加lazyload-图片懒加载" class="headerlink" title="添加lazyload 图片懒加载"></a>添加lazyload 图片懒加载</h2><p>懒加载,简言之就是在html加载的时候,若果img标签的src是有内容的,在加载的过程中,img标签就回去请求这个图片,直到加载完,我们的浏览器的刷新那个图标才会停止转动,也就是才算请求完<br>懒加载能够在你鼠标不动的时候只加载目前电脑窗口内需要展示的图片,电脑屏幕内部需要展示的图片就暂时不加载.<br>从而达到加快访问网站速度的效果.</p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置:"></a>配置:</h3><p>在你的 Hexo 目录下,执行以下命令：</p>
-<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">npm install hexo-lazyload-<span class="built_in">image</span> --<span class="built_in">save</span></span><br></pre></td></tr></table></figure>
-
-<p>然后在你的 Hexo 目录的配置文件 _config.yml 中任意位置添加配置:</p>
-<figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line"><span class="string">lazyload:</span>  <span class="string">enable:</span> <span class="literal">true</span>  <span class="string">onlypost:</span> <span class="literal">false</span>  <span class="string">loadingImg:</span></span><br></pre></td></tr></table></figure>
-
-<p>参数说明:<br><strong>onlypost:</strong><br>是否仅文章中的图片做懒加载, 如果为 false, 则主题中的其他图片, 也会做懒加载, 如头像, logo 等任何图片.<br><strong>loadingImg - 图片未加载时的代替图:</strong><br>不填写使用默认加载图片,如果需要自定义,添填入loading图片地址.<br>如果是本地图片,不要忘记把图片添加到你的主题目录下. Next 主题需将图片放到<code>~\themes\next\source\images</code>目录下,然后引用时: loadingImg: /images/图片文件名</p>
-]]></content>
+    <url>/posts/e352bd5/</url>
+    <content><![CDATA[<div class="fnScope" scope="1"><p>Hexo Next主题的使用及美化。。。</p><a id="more"></a><h1 id="hexo-next主题的使用及美化">Hexo Next主题的使用及美化</h1><h2 id="常用的命令">常用的命令</h2><h3 id="hexo常用命令">hexo常用命令:</h3><figure class="highlight routeros"><table><tbody><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;title&quot;</span>  # 生成新文章: \source\_posts\title.md</span><br><span class="line"></span><br><span class="line">hexo new<span class="built_in"> page </span><span class="string">&quot;title&quot;</span>  # 生成新的页面, 后面可在主题配置文件中配置页面生成文章或页面的模板放在博客文件夹根目录下的 scaffolds/ 文件夹里面, 文章对应的是 post.md , 页面对应的是page.md, 草稿的是draft.md</span><br><span class="line"></span><br><span class="line">hexo init [folder] # 初始化一个网站. 如果没有设置 folder , Hexo 默认在目前的文件夹建立网站</span><br><span class="line">hexo new [layout] &lt;title&gt; # 新建一篇文章. 如果没有设置 layout 的话, 默认使用 _config.yml 中的 default_layout 参数代替. 如果标题包含空格的话, 请使用引号括起来</span><br><span class="line"></span><br><span class="line">hexo version # 查看版本</span><br><span class="line">hexo clean # 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo g # 等于hexo generate # 生成静态文件</span><br><span class="line">hexo generate --watch # 监视文件变动，只有变动的文件才会写入。</span><br><span class="line">hexo s # 等于hexo<span class="built_in"> server </span># 本地预览</span><br><span class="line">hexo d # 等于hexo deploy # 部署, 可与hexo g合并为 hexo d -g</span><br><span class="line">git<span class="built_in"> config </span>--global user.name <span class="string">&quot;YOURUSERNAME&quot;</span>  # 修改git用户名</span><br><span class="line">git<span class="built_in"> config </span>--global user.email <span class="string">&quot;YOUREMAIL&quot;</span> # 修改git邮箱</span><br><span class="line"></span><br><span class="line">npm uninstall XXX,卸载某个插件 例如：</span><br><span class="line">npm uninstall hexo-generator-sitemap --save</span><br><span class="line">npm uninstall hexo-generator-baidu-sitemap --save</span><br><span class="line">npm uninstall hexo-abbrlink --save</span><br></pre></td></tr></tbody></table></figure><h2 id="使用图片">使用图片</h2><p>这个在我的另一篇文章中专门写到。</p><p><strong>Hexo中的图片</strong></p><h2 id="添加字数统计阅读时长">添加字数统计、阅读时长</h2><p><strong>Next</strong> 中已经集成了【字数统计】、【阅读时长】的功能，所以我们只需要进行配置即可。 <strong>步骤：</strong> 1. 安装插件 如果没有安装 <code>hexo-symbols-count-time</code> 插件，先安装该插件：</p><figure class="highlight sql"><table><tbody><tr><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-symbols-<span class="keyword">count</span>-<span class="built_in">time</span></span><br></pre></td></tr></tbody></table></figure><ol start="2" type="1">
+<li>打开<code>主题配置文件:./_config.yml</code>。搜索<code>Post wordcount</code>即可。 <figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-symbols-count-time</span></span><br><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line">  <span class="attr">separated_meta:</span> <span class="literal">false</span> <span class="comment"># 是否在一行展示</span></span><br><span class="line">  <span class="attr">item_text_post:</span> <span class="literal">true</span> <span class="comment"># 是否展示文字</span></span><br><span class="line">  <span class="attr">item_text_total:</span> <span class="literal">false</span> <span class="comment"># 统计整个网站的字数，及阅读时长</span></span><br><span class="line">  <span class="attr">awl:</span> <span class="number">2</span> <span class="comment"># 平均字长(字元数)。默认值:4 中文建议设置：2</span></span><br><span class="line">  <span class="attr">wpm:</span> <span class="number">200</span> <span class="comment"># wpm—每分钟单词数。默认值:275。</span></span><br></pre></td></tr></tbody></table></figure> 现在部署就可以看到效果了。 <figure class="highlight axapta"><table><tbody><tr><td class="code"><pre><span class="line">hexo <span class="keyword">server</span></span><br></pre></td></tr></tbody></table></figure> <strong>效果：</strong> <img data-src="https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master/image_20.png"></li>
+</ol><h2 id="添加-一言">添加 一言</h2><p>将下面这段代码放入页面内需要展示一句话的位置即可. <code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://api.uixsj.cn/hitokoto/w.php?code=js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;xsjhitokoto&quot;&gt;&lt;script&gt;xsjhitokoto()&lt;/script&gt;&lt;/div&gt;</code> 中英文版 使用方法同上 <code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://api.uixsj.cn/hitokoto/en.php?code=js&quot;&gt;&lt;/script&gt;&lt;div id=&quot;enhitokoto&quot;&gt;&lt;script&gt;enhitokoto()&lt;/script&gt;&lt;/div&gt;</code> 你可以放在文章中,侧栏中.</p><p>示例（中英文版）：</p><hr><p>A friend without faults will never be found。没有缺点的朋友是永远找不到的。</p><hr><figure>
+<img data-src="https://i.loli.net/2019/09/15/2ogAV3iZlXtKHzk.png" alt><figcaption>一言</figcaption>
+</figure><h2 id="hexo-在subtile和description中实现换行">Hexo 在subtile和description中实现换行</h2><p>这个功能是在写代码的时候用的,例如你想说明一句话时候用到换行显示该怎么办. 这里用我的打赏部分做个示例. 习惯更改的文本描述用双引号括起来,同时实现 即可达到换行目的</p><h3 id="语法">语法:</h3><figure class="highlight avrasm"><table><tbody><tr><td class="code"><pre><span class="line"><span class="symbol">reward_comment:</span> <span class="string">&quot;您的支持将用于博客的维护费用.&lt;br&gt;例如：域名续费一年需26￥&quot;</span></span><br></pre></td></tr></tbody></table></figure><h2 id="添加lazyload-图片懒加载">添加lazyload 图片懒加载</h2><p>懒加载,简言之就是在html加载的时候,若果img标签的src是有内容的,在加载的过程中,img标签就回去请求这个图片,直到加载完,我们的浏览器的刷新那个图标才会停止转动,也就是才算请求完 懒加载能够在你鼠标不动的时候只加载目前电脑窗口内需要展示的图片,电脑屏幕内部需要展示的图片就暂时不加载. 从而达到加快访问网站速度的效果.</p><h3 id="配置">配置:</h3><p>在你的 Hexo 目录下,执行以下命令：</p><figure class="highlight maxima"><table><tbody><tr><td class="code"><pre><span class="line">npm install hexo-lazyload-<span class="built_in">image</span> --<span class="built_in">save</span></span><br></pre></td></tr></tbody></table></figure><p>然后在你的 Hexo 目录的配置文件 _config.yml 中任意位置添加配置:</p><figure class="highlight groovy"><table><tbody><tr><td class="code"><pre><span class="line"><span class="string">lazyload:</span>  <span class="string">enable:</span> <span class="literal">true</span>  <span class="string">onlypost:</span> <span class="literal">false</span>  <span class="string">loadingImg:</span></span><br></pre></td></tr></tbody></table></figure><p>参数说明: <strong>onlypost:</strong> 是否仅文章中的图片做懒加载, 如果为 false, 则主题中的其他图片, 也会做懒加载, 如头像, logo 等任何图片. <strong>loadingImg - 图片未加载时的代替图:</strong> 不填写使用默认加载图片,如果需要自定义,添填入loading图片地址. 如果是本地图片,不要忘记把图片添加到你的主题目录下. Next 主题需将图片放到<code>~\themes\next\source\images</code>目录下,然后引用时: loadingImg: /images/图片文件名</p><script src="https://unpkg.com/tippy.js@2.0.2/dist/tippy.all.min.js"></script><script src="/js/attachTooltips.js"></script><link rel="stylesheet" href="/css/tippy.css"></div>]]></content>
       <categories>
         <category>博客</category>
       </categories>
@@ -88,36 +44,36 @@
   </entry>
   <entry>
     <title>vscode初探</title>
-    <url>/2020/02/05/vscode%E5%88%9D%E6%8E%A2/</url>
-    <content><![CDATA[<p>  很早之前就听说了 <strong>vscode</strong> 编辑器的大名，一直就没有使用。最近武汉爆发新型冠状病毒（，武汉加油！！！），就下载来体验一下。</p>
-<a id="more"></a>
-
-<h1 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h1><p>​    <strong>Vscode</strong> 是一款开源的跨平台编辑器。默认情况下，<strong>vscode</strong> 使用的语言为英文(<strong>us</strong>)，如何将其显示语言修改成中文了？</p>
-<h2 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h2><ol>
-<li><p>打开 <strong>vscode</strong> 工具；</p>
-</li>
+    <url>/posts/5bc57984/</url>
+    <content><![CDATA[<div class="fnScope" scope="1"><p>很早之前就听说了 <strong>vscode</strong> 编辑器的大名，一直就没有使用。最近武汉爆发新型冠状病毒（，武汉加油！！！），就下载来体验一下。</p><a id="more"></a><h1 id="汉化">汉化</h1><p>​ <strong>Vscode</strong> 是一款开源的跨平台编辑器。默认情况下，<strong>vscode</strong> 使用的语言为英文(<strong>us</strong>)，如何将其显示语言修改成中文了？</p><h2 id="步骤">步骤：</h2><ol type="1">
+<li><p>打开 <strong>vscode</strong> 工具；</p></li>
 <li><p>使用快捷键组合【Ctrl+Shift+p】，在搜索框中输入<code>configure display language</code>，然后回车。</p>
-<p><img src="C:/Users/%E4%B8%8A%E5%B0%B9%E4%B8%8B%E6%A1%86/AppData/Roaming/Typora/typora-user-images/1580919879396.png" alt="1580919879396"></p>
-</li>
+<figure>
+<img data-src="C:/Users/上尹下框/AppData/Roaming/Typora/typora-user-images/1580919879396.png" alt><figcaption>1580919879396</figcaption>
+</figure></li>
 <li><p>回车之后，点击 <code>Install additional languages...</code>。</p>
-<p><img src="C:/Users/%E4%B8%8A%E5%B0%B9%E4%B8%8B%E6%A1%86/AppData/Roaming/Typora/typora-user-images/1580920674135.png" alt="1580920674135"></p>
-</li>
+<figure>
+<img data-src="C:/Users/上尹下框/AppData/Roaming/Typora/typora-user-images/1580920674135.png" alt><figcaption>1580920674135</figcaption>
+</figure></li>
 <li><p>它就会弹出一个面板：第一个就是中文，点击即可。</p>
-<p><img src="C:/Users/%E4%B8%8A%E5%B0%B9%E4%B8%8B%E6%A1%86/AppData/Roaming/Typora/typora-user-images/1580920754333.png" alt="1580920754333"></p>
-</li>
+<figure>
+<img data-src="C:/Users/上尹下框/AppData/Roaming/Typora/typora-user-images/1580920754333.png" alt><figcaption>1580920754333</figcaption>
+</figure></li>
 <li><p>然后就是点击 <code>Install</code>进行安装。</p>
-<p><img src="C:/Users/%E4%B8%8A%E5%B0%B9%E4%B8%8B%E6%A1%86/AppData/Roaming/Typora/typora-user-images/1580920858167.png" alt="1580920858167"></p>
-<p>等待安装…</p>
-</li>
+<figure>
+<img data-src="C:/Users/上尹下框/AppData/Roaming/Typora/typora-user-images/1580920858167.png" alt><figcaption>1580920858167</figcaption>
+</figure>
+<p>等待安装...</p></li>
 <li><p>安装成功后，右下角回弹出一个对话框：你想把VS Code的UI语言改为简体并重新启动吗?点击 <strong>yes</strong> 即可。</p>
-<p><img src="C:/Users/%E4%B8%8A%E5%B0%B9%E4%B8%8B%E6%A1%86/AppData/Roaming/Typora/typora-user-images/1580921175824.png" alt="1580921175824"></p>
-<p>等待 <strong>vscode</strong> 重启。</p>
-</li>
+<figure>
+<img data-src="C:/Users/上尹下框/AppData/Roaming/Typora/typora-user-images/1580921175824.png" alt><figcaption>1580921175824</figcaption>
+</figure>
+<p>等待 <strong>vscode</strong> 重启。</p></li>
 <li><p>重启后，就ok了。</p>
-<p><img src="C:/Users/%E4%B8%8A%E5%B0%B9%E4%B8%8B%E6%A1%86/AppData/Roaming/Typora/typora-user-images/1580921318153.png" alt="1580921318153"></p>
-</li>
-</ol>
-]]></content>
+<figure>
+<img data-src="C:/Users/上尹下框/AppData/Roaming/Typora/typora-user-images/1580921318153.png" alt><figcaption>1580921318153</figcaption>
+</figure></li>
+</ol><script src="https://unpkg.com/tippy.js@2.0.2/dist/tippy.all.min.js"></script><script src="/js/attachTooltips.js"></script><link rel="stylesheet" href="/css/tippy.css"></div>]]></content>
       <categories>
         <category>经验</category>
       </categories>
@@ -127,77 +83,15 @@
   </entry>
   <entry>
     <title>[转] 一直到2089年的IDEA，实测有效</title>
-    <url>/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/</url>
-    <content><![CDATA[<p>现在 <strong>InteliJ IDEA</strong> 是 <strong>Java</strong> 常用的编译器，我给大家分享一个可以激活到2089年的方法。（实测有效）</p>
-<a id="more"></a>
-
-<h1 id="转-IntelliJ-IDEA-2019-3破解（亲测有效，可激活至-2089-年）"><a href="#转-IntelliJ-IDEA-2019-3破解（亲测有效，可激活至-2089-年）" class="headerlink" title="[转] IntelliJ IDEA 2019.3破解（亲测有效，可激活至 2089 年）"></a><strong>[转] IntelliJ IDEA 2019.3破解（亲测有效，可激活至 2089 年）</strong></h1><h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>转载于 【犬小哈】的文章：<a href="https://segmentfault.com/a/1190000021220727" target="_blank" rel="noopener">https://segmentfault.com/a/1190000021220727</a></p>
-<h2 id="二、下载最新的-IDEA-2019-3"><a href="#二、下载最新的-IDEA-2019-3" class="headerlink" title="二、下载最新的 IDEA 2019.3"></a>二、下载最新的 IDEA 2019.3</h2><p>其实也可以从老版本直接升级，这里为了照顾大部分人可能第一次安装，我们选择从官网下载，下载地址为: <a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">https://www.jetbrains.com/idea/download/</a></p>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/1580733991569.png" class="">
-
-<p>点击下载，静待下载完成~</p>
-<h2 id="三、启动-IDEA-2019-3-安装包"><a href="#三、启动-IDEA-2019-3-安装包" class="headerlink" title="三、启动 IDEA 2019.3 安装包"></a><strong>三、启动 IDEA 2019.3 安装包</strong></h2><p>这里笔者机器上，之前是安装过 IDEA 2019.2.3 版本的，所以提示是否删除老版本，这里我们选择删除老版本：</p>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/1580734823977.png" class="">
-
-
-
-<p>注意: 若你第一次安装，是没有这一步的，跳过看后面即可~</p>
-<p>继续点击下一步，这里笔者的电脑是 64 位的，顺便将 64 位的 IDEA 启动图标生成到桌面上：</p>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wps1.jpg" class=""> 
-
-<p>点击下一步，这里又弹出卸载老版本 IDEA 2019.2.3 可以做的操作，如果是第一次安装，则没有这一步，看下面步骤即可~</p>
-<p>这里由于我之前安装有老版本的 IDEA, 选择将老版本的缓存、本地历史也删除掉：</p>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wps2.jpg" class=""> 
-
-<p>注意：很多小伙伴激活失败，很可能是之前老版本的遗留缓存导致的，在升级的时候，一定记住要给删除掉，否则，可能导致激活失败的情况~</p>
-<p>继续点击下一步，启动 IDEA 2019.3, 启动成功后，我们可以看到 IDEA 新的欢迎界面如下:</p>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wps3.jpg" class=""> 
-
-<p><strong>四、开始激活</strong></p>
-<p>如下图所示，我们先选择免费试用 30 天，先进去再说:</p>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wps4.jpg" class="">  
-
-<p><strong>五、配置破解补丁</strong></p>
-<p>进去过后，我们随便建个项目，点击菜单栏 <strong>Help -&gt; Edit Custom VM Options</strong>:</p>
-<p>注意：切记一定要通过 IDEA 来修改 .vmoptions 文件，不要手动直接去修改，现在 IDEA 针对反破解已经越来越严格了~</p>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wps5.jpg" class="">   
-
-<p>下载破解补丁成功以后，笔者将它放置在了 IDEA 的安装目录 /bin 路径下，以防止后面被自己误删:</p>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wps6.jpg" class="">   
-
-<blockquote>
+    <url>/posts/cfeb9d08/</url>
+    <content><![CDATA[<div class="fnScope" scope="1"><p>现在 <strong>InteliJ IDEA</strong> 是 <strong>Java</strong> 常用的编译器，我给大家分享一个可以激活到2089年的方法。（实测有效）</p><a id="more"></a><h1 id="转-intellij-idea-2019.3破解亲测有效可激活至-2089-年"><strong>[转] IntelliJ IDEA 2019.3破解（亲测有效，可激活至 2089 年）</strong></h1><h2 id="一前言">一、前言</h2><p>转载于 【犬小哈】的文章：https://segmentfault.com/a/1190000021220727</p><h2 id="二下载最新的-idea-2019.3">二、下载最新的 IDEA 2019.3</h2><p>其实也可以从老版本直接升级，这里为了照顾大部分人可能第一次安装，我们选择从官网下载，下载地址为: https://www.jetbrains.com/idea/download/</p><img data-src="/posts/cfeb9d08/1580733991569.png" class><p>点击下载，静待下载完成~</p><h2 id="三启动-idea-2019.3-安装包"><strong>三、启动 IDEA 2019.3 安装包</strong></h2><p>这里笔者机器上，之前是安装过 IDEA 2019.2.3 版本的，所以提示是否删除老版本，这里我们选择删除老版本：</p><img data-src="/posts/cfeb9d08/1580734823977.png" class><p>注意: 若你第一次安装，是没有这一步的，跳过看后面即可~</p><p>继续点击下一步，这里笔者的电脑是 64 位的，顺便将 64 位的 IDEA 启动图标生成到桌面上：</p><img data-src="/posts/cfeb9d08/wps1.jpg" class><p>点击下一步，这里又弹出卸载老版本 IDEA 2019.2.3 可以做的操作，如果是第一次安装，则没有这一步，看下面步骤即可~</p><p>这里由于我之前安装有老版本的 IDEA, 选择将老版本的缓存、本地历史也删除掉：</p><img data-src="/posts/cfeb9d08/wps2.jpg" class><p>注意：很多小伙伴激活失败，很可能是之前老版本的遗留缓存导致的，在升级的时候，一定记住要给删除掉，否则，可能导致激活失败的情况~</p><p>继续点击下一步，启动 IDEA 2019.3, 启动成功后，我们可以看到 IDEA 新的欢迎界面如下:</p><img data-src="/posts/cfeb9d08/wps3.jpg" class><p><strong>四、开始激活</strong></p><p>如下图所示，我们先选择免费试用 30 天，先进去再说:</p><img data-src="/posts/cfeb9d08/wps4.jpg" class><p><strong>五、配置破解补丁</strong></p><p>进去过后，我们随便建个项目，点击菜单栏 <strong>Help -&gt; Edit Custom VM Options</strong>:</p><p>注意：切记一定要通过 IDEA 来修改 .vmoptions 文件，不要手动直接去修改，现在 IDEA 针对反破解已经越来越严格了~</p><img data-src="/posts/cfeb9d08/wps5.jpg" class><p>下载破解补丁成功以后，笔者将它放置在了 IDEA 的安装目录 /bin 路径下，以防止后面被自己误删:</p><img data-src="/posts/cfeb9d08/wps6.jpg" class><blockquote>
 <p>注意：补丁全路径中不要包含中文，否则，可能导致破解失败！</p>
 <p>页面提取人数太多，导致破解补丁容易被封，一直更换非常麻烦，为限制人数，目前暂不提供页面直接提取，改为从笔者公众号提取。</p>
 <p><strong>需要的小伙伴，请关注微信公众号: 是个程序员, 或者扫描下方公众号二维码，回复关键字：idea, 即可免费无套路获取激活码、破解补丁，持续更新中~。</strong></p>
-</blockquote>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wx_gzh_8cm.jpg" class="">   
-
-
-
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wps7.jpg" class="">   
-
-<p>在 .vmoptions 文件中配置我们补丁放置的全路径位置。</p>
-<p>-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2019.3\bin\jetbrains-agent.jar</p>
-<p>注意，你的位置可能和我不一样，请自行修改。</p>
-<p><strong>六、重启 IDEA</strong></p>
-<p>切记，一定要重启 IDEA.</p>
-<p><strong>七、填入激活码，激活</strong></p>
-<p>重启完成后，开始填入激活码，点击菜单栏 <strong>Help -&gt; Register</strong>:</p>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wps9.jpg" class="">    
-
-
-
-<p><strong>注意：激活码需搭配上面的破解补丁一起使用才有效！！！</strong></p>
-<blockquote>
+</blockquote><img data-src="/posts/cfeb9d08/wx_gzh_8cm.jpg" class><img data-src="/posts/cfeb9d08/wps7.jpg" class><p>在 .vmoptions 文件中配置我们补丁放置的全路径位置。</p><p>-javaagent:C:FilesIDEA 2019.3-agent.jar</p><p>注意，你的位置可能和我不一样，请自行修改。</p><p><strong>六、重启 IDEA</strong></p><p>切记，一定要重启 IDEA.</p><p><strong>七、填入激活码，激活</strong></p><p>重启完成后，开始填入激活码，点击菜单栏 <strong>Help -&gt; Register</strong>:</p><img data-src="/posts/cfeb9d08/wps9.jpg" class><p><strong>注意：激活码需搭配上面的破解补丁一起使用才有效！！！</strong></p><blockquote>
 <p>页面提取人数太多，导致破解补丁容易被封，一直更换非常麻烦，为限制人数，目前暂不提供页面直接提取，改为从笔者公众号提取。</p>
 <p><strong>需要的小伙伴，请关注微信公众号: 是个程序员, 或者扫描下方公众号二维码，回复关键字：idea, 即可免费无套路获取激活码、破解补丁，持续更新中~。</strong></p>
-</blockquote>
-<img src="/2020/02/03/%E8%BD%AC-%E4%B8%80%E7%9B%B4%E5%88%B02089%E5%B9%B4%E7%9A%84IDEA%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/wx_gzh_8cm.jpg" class="">   
-
-
-
-<p>*<em>再次声明本文章转载于【犬小哈】的文章：<a href="https://segmentfault.com/a/1190000021220727" target="_blank" rel="noopener">https://segmentfault.com/a/1190000021220727</a> *</em></p>
-]]></content>
+</blockquote><img data-src="/posts/cfeb9d08/wx_gzh_8cm.jpg" class><p><strong>再次声明本文章转载于【犬小哈】的文章：https://segmentfault.com/a/1190000021220727 </strong></p><script src="https://unpkg.com/tippy.js@2.0.2/dist/tippy.all.min.js"></script><script src="/js/attachTooltips.js"></script><link rel="stylesheet" href="/css/tippy.css"></div>]]></content>
       <tags>
         <tag>idea</tag>
         <tag>注册</tag>
@@ -205,103 +99,59 @@
   </entry>
   <entry>
     <title>hexo-标签插件</title>
-    <url>/2019/12/19/2019-12-19-hexo-%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<p>这篇文章简单的介绍 <strong>hexo-next</strong> 的标签插件，可以在方便写作，和美化排版。</p>
-<a id="more"></a>
-
-<h1 id="标签插件（Tag-Plugins）"><a href="#标签插件（Tag-Plugins）" class="headerlink" title="标签插件（Tag Plugins）"></a>标签插件（Tag Plugins）</h1><p>标签插件（Tag Plugins）：用于在文章中快速插入特定内容的插件。介绍一些常用的方法，详情请上<a href="https://hexo.io/zh-cn/docs/tag-plugins" target="_blank" rel="noopener">官网</a>。</p>
-<h2 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h2><p>在文章中插入引言，可包含作者、来源和标题。</p>
-<p>别号：quote</p>
-<figure class="highlight twig"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">blockquote</span> [author[, <span class="name">source</span>]] [link] [source_link_title] %&#125;</span></span><br><span class="line"><span class="xml">content</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">endblockquote</span> %&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><p><strong>没有提供参数，则只输出普通的 blockquote</strong></p>
-<blockquote><p>道可道，非常道；名可名，非常名。<br>无名，天地之始，有名，万物之母。</p>
-</blockquote>
-
-<h3 id="引用书上的句子"><a href="#引用书上的句子" class="headerlink" title="引用书上的句子"></a>引用书上的句子</h3><blockquote><p>道可道，非常道；名可名，非常名。<br>无名，天地之始，有名，万物之母。</p>
-<footer><strong>老子</strong><cite>道德经·第一章</cite></footer></blockquote>
-
-<h3 id="引用-Twitter"><a href="#引用-Twitter" class="headerlink" title="引用 Twitter"></a>引用 Twitter</h3><blockquote><p>最新: DevDocs 现在提供语法高亮显示. <a href="http://devdocs.io" target="_blank" rel="noopener">http://devdocs.io</a></p>
-<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="noopener">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
-
-<h3 id="引用网络文章"><a href="#引用网络文章" class="headerlink" title="引用网络文章"></a>引用网络文章</h3><blockquote><p>每一次互动都是宝贵的，也是让人愉快的机会。</p>
-<footer><strong>刘帮君</strong><cite><a href="http://www.vtkd.xyz" target="_blank" rel="noopener">我的博客</a></cite></footer></blockquote>
-
-
-
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>在文章中插入代码</p>
-<p>别名：code</p>
-<figure class="highlight inform7"><table><tr><td class="code"><pre><span class="line">`&#123;% codeblock <span class="comment">[title]</span> <span class="comment">[lang:language]</span> <span class="comment">[url]</span> <span class="comment">[link text]</span> <span class="comment">[additional options]</span> %&#125;code snippet&#123;% endcodeblock %&#125;`</span><br></pre></td></tr></table></figure>
-
-<p>在 <code>option:value</code> 格式中指定额外的选项，例如 <code>line_number:false first_line:5</code> 。</p>
-<table>
+    <url>/posts/daaf743c/</url>
+    <content><![CDATA[<div class="fnScope" scope="1" nth="4"><p>这篇文章简单的介绍 <strong>hexo-next</strong> 的标签插件，可以在方便写作，和美化排版。</p><a id="more"></a><h1 id="标签插件tag-plugins">标签插件（Tag Plugins）</h1><p>标签插件（Tag Plugins）：用于在文章中快速插入特定内容的插件。介绍一些常用的方法，详情请上<a href="https://hexo.io/zh-cn/docs/tag-plugins" target="_blank" rel="noopener">官网</a>。</p><h2 id="引用块">引用块</h2><p>在文章中插入引言，可包含作者、来源和标题。</p><p>别号：quote</p><figure class="highlight twig"><table><tbody><tr><td class="code"><pre><span class="line"><span class="template-tag">{% <span class="name">blockquote</span> [author[, <span class="name">source</span>]] [link] [source_link_title] %}</span></span><br><span class="line"><span class="xml">content</span></span><br><span class="line"><span class="template-tag">{% <span class="name">endblockquote</span> %}</span></span><br></pre></td></tr></tbody></table></figure><h3 id="样例">样例</h3><p><strong>没有提供参数，则只输出普通的 blockquote</strong></p><blockquote><div class="fnScope" scope="1.1">
+<p>道可道，非常道；名可名，非常名。 无名，天地之始，有名，万物之母。</p>
+</div>
+</blockquote><h3 id="引用书上的句子">引用书上的句子</h3><blockquote><div class="fnScope" scope="1.2">
+<p>道可道，非常道；名可名，非常名。 无名，天地之始，有名，万物之母。</p>
+</div>
+<footer><strong>老子</strong><cite>道德经·第一章</cite></footer></blockquote><h3 id="引用-twitter">引用 Twitter</h3><blockquote><div class="fnScope" scope="1.3">
+<p>最新: DevDocs 现在提供语法高亮显示. http://devdocs.io</p>
+</div>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="noopener">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote><h3 id="引用网络文章">引用网络文章</h3><blockquote><div class="fnScope" scope="1.4">
+<p>每一次互动都是宝贵的，也是让人愉快的机会。</p>
+</div>
+<footer><strong>刘帮君</strong><cite><a href="http://www.vtkd.xyz">我的博客</a></cite></footer></blockquote><h2 id="代码块">代码块</h2><p>在文章中插入代码</p><p>别名：code</p><figure class="highlight inform7"><table><tbody><tr><td class="code"><pre><span class="line">`{% codeblock <span class="comment">[title]</span> <span class="comment">[lang:language]</span> <span class="comment">[url]</span> <span class="comment">[link text]</span> <span class="comment">[additional options]</span> %}code snippet{% endcodeblock %}`</span><br></pre></td></tr></tbody></table></figure><p>在 <code>option:value</code> 格式中指定额外的选项，例如 <code>line_number:false first_line:5</code> 。</p><table>
 <thead>
-<tr>
-<th align="left">额外选项</th>
-<th align="left">描述</th>
-<th align="left">默认</th>
+<tr class="header">
+<th style="text-align: left;">额外选项</th>
+<th style="text-align: left;">描述</th>
+<th style="text-align: left;">默认</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left"><code>line_number</code></td>
-<td align="left">显示行号</td>
-<td align="left"><code>true</code></td>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>line_number</code></td>
+<td style="text-align: left;">显示行号</td>
+<td style="text-align: left;"><code>true</code></td>
 </tr>
-<tr>
-<td align="left"><code>highlight</code></td>
-<td align="left">启用代码突出显示</td>
-<td align="left"><code>true</code></td>
+<tr class="even">
+<td style="text-align: left;"><code>highlight</code></td>
+<td style="text-align: left;">启用代码突出显示</td>
+<td style="text-align: left;"><code>true</code></td>
 </tr>
-<tr>
-<td align="left"><code>first_line</code></td>
-<td align="left">指定第一行号</td>
-<td align="left"><code>1</code></td>
+<tr class="odd">
+<td style="text-align: left;"><code>first_line</code></td>
+<td style="text-align: left;">指定第一行号</td>
+<td style="text-align: left;"><code>1</code></td>
 </tr>
-<tr>
-<td align="left"><code>mark</code></td>
-<td align="left">突出显示特定行，每个值用逗号分隔。使用破折号指定数字范围。 示例：<code>mark:1,4-7,10</code>将标记第1、4至7和10行。</td>
-<td align="left"></td>
+<tr class="even">
+<td style="text-align: left;"><code>mark</code></td>
+<td style="text-align: left;">突出显示特定行，每个值用逗号分隔。使用破折号指定数字范围。 示例：<code>mark:1,4-7,10</code>将标记第1、4至7和10行。</td>
+<td style="text-align: left;"></td>
 </tr>
-<tr>
-<td align="left"><code>wrap</code></td>
-<td align="left">将代码块包装在 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank" rel="noopener"><code>table</code></a></td>
-<td align="left"><code>true</code></td>
+<tr class="odd">
+<td style="text-align: left;"><code>wrap</code></td>
+<td style="text-align: left;">将代码块包装在 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank" rel="noopener"><code>table</code></a></td>
+<td style="text-align: left;"><code>true</code></td>
 </tr>
-</tbody></table>
-<h3 id="样例："><a href="#样例：" class="headerlink" title="样例："></a>样例：</h3><p>普通的代码块</p>
-<figure class="highlight isbl"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">alert</span>(<span class="string">'Hello World!'</span>);</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="指定语言"><a href="#指定语言" class="headerlink" title="指定语言"></a>指定语言</h3><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">[System.out.println(<span class="string">"刘帮君帅！"</span>)];</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="附加说明"><a href="#附加说明" class="headerlink" title="附加说明"></a><strong>附加说明</strong></h3><figure class="highlight reasonml"><figcaption><span>Object.toString()</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">lbj.<span class="keyword">to</span><span class="constructor">String()</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="附加说明和网址"><a href="#附加说明和网址" class="headerlink" title="附加说明和网址"></a>附加说明和网址</h3><figure class="highlight excel"><figcaption><span>Object.toString</span><a href="http://www.vtkd.xyz" target="_blank" rel="noopener">Lbj.java</a></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">lbj.toString();</span><br><span class="line"></span><br><span class="line">=&gt; <span class="string">"lbj帅"</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><p>在文章中插入图片，将图片放在资源文件中即可：</p>
-<img src="/2019/12/19/2019-12-19-hexo-%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/1.jpg" class="">
-
-
-
-<h2 id="Youtube"><a href="#Youtube" class="headerlink" title="Youtube"></a>Youtube</h2><p>插入 Youtube 视频其实很简单，在 YouTube 视频的下方的“共享”中，或者是在视频上的右击：选择 <code>复制嵌入代码</code> 。选择嵌入即可获取类似这样的链接：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"800"</span> <span class="attr">height</span>=<span class="string">"315"</span> <span class="attr">src</span>=<span class="string">"https://www.youtube.com/embed/ZNtL5Hd5Tb8"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">allow</span>=<span class="string">"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZNtL5Hd5Tb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-`width` 和 `height` 属性可以更改：width：500，height：200
-
-<iframe width="500" height="200" src="https://www.youtube.com/embed/ZNtL5Hd5Tb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<h2 id="文章摘要和截断"><a href="#文章摘要和截断" class="headerlink" title="文章摘要和截断"></a>文章摘要和截断</h2><p>在文章中使用 <code>&lt;!-- more --&gt;</code> ，那么 <code>&lt;!-- more --&gt;</code> 之前的内容会被当做是文章的摘要。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">道可道，非常道；名可名，非常名。</span><br><span class="line"><span class="comment">&lt;!-- more --&gt;</span></span><br><span class="line">无名，天地之始，有名，万物之母。</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意：</strong></p>
-<ul>
+</tbody>
+</table><h3 id="样例-1">样例：</h3><p>普通的代码块</p><figure class="highlight isbl"><table><tbody><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">alert</span>(<span class="string">&apos;Hello World!&apos;</span>);</span></span><br></pre></td></tr></tbody></table></figure><h3 id="指定语言">指定语言</h3><figure class="highlight objc"><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">[System.out.println(<span class="string">&quot;刘帮君帅！&quot;</span>)];</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><h3 id="附加说明"><strong>附加说明</strong></h3><figure class="highlight reasonml"><figcaption><span>Object.toString()</span></figcaption><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">lbj.<span class="keyword">to</span><span class="constructor">String()</span>;</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><h3 id="附加说明和网址">附加说明和网址</h3><figure class="highlight excel"><figcaption><span>Object.toString</span><a href="http://www.vtkd.xyz">Lbj.java</a></figcaption><table><tbody><tr><td class="code"><pre><span class="line"></span><br><span class="line">lbj.toString();</span><br><span class="line"></span><br><span class="line">=&gt; <span class="string">&quot;lbj帅&quot;</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><h2 id="image">Image</h2><p>在文章中插入图片，将图片放在资源文件中即可：</p><img data-src="/posts/daaf743c/1.jpg" class><h2 id="youtube">Youtube</h2><p>插入 Youtube 视频其实很简单，在 YouTube 视频的下方的“共享”中，或者是在视频上的右击：选择 <code>复制嵌入代码</code> 。选择嵌入即可获取类似这样的链接：</p><figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">&quot;800&quot;</span> <span class="attr">height</span>=<span class="string">&quot;315&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://www.youtube.com/embed/ZNtL5Hd5Tb8&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allow</span>=<span class="string">&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><iframe width="560" height="315" src="https://www.youtube.com/embed/ZNtL5Hd5Tb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe><p><code>width</code> 和 <code>height</code> 属性可以更改：width：500，height：200</p><iframe width="500" height="200" src="https://www.youtube.com/embed/ZNtL5Hd5Tb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe><h2 id="文章摘要和截断">文章摘要和截断</h2><p>在文章中使用 <code>&lt;!-- more --&gt;</code> ，那么 <code>&lt;!-- more --&gt;</code> 之前的内容会被当做是文章的摘要。</p><figure class="highlight xml"><table><tbody><tr><td class="code"><pre><span class="line">道可道，非常道；名可名，非常名。</span><br><span class="line"><span class="comment">&lt;!-- more --&gt;</span></span><br><span class="line">无名，天地之始，有名，万物之母。</span><br></pre></td></tr></tbody></table></figure><p><strong>注意：</strong></p><ul>
 <li>如果在 Front-matter中配置了 <code>description</code> ，那么就会以 <code>description</code> 为准。</li>
-</ul>
-<p>*<em>大致就介绍这么多，还有更多的使用方式可以通过评论，微信公众号；一起交流，学习。 *</em> </p>
-]]></content>
+</ul><p><strong>大致就介绍这么多，还有更多的使用方式可以通过评论，微信公众号；一起交流，学习。 </strong></p><script src="https://unpkg.com/tippy.js@2.0.2/dist/tippy.all.min.js"></script><script src="/js/attachTooltips.js"></script><link rel="stylesheet" href="/css/tippy.css"></div>]]></content>
       <categories>
         <category>笔记</category>
         <category>hexo</category>
@@ -313,183 +163,149 @@
   </entry>
   <entry>
     <title>hexo基本使用</title>
-    <url>/2019/12/19/hexo%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>前言</p>
-<p>记录的是hexo的基本操作。关于如何创建文件写作，及其布局；From-Matter的参数。</p>
-<a id="more"></a>
-
-<p>全文</p>
-<h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><p>可以执行以下命令来创建一篇新文章或者新的页面</p>
-<figure class="highlight gauss"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<p><code>layout</code>：指定文章的布局，默认为<code>post</code>，可以通过修改<code>_config.yml</code>中的<code>default_layout</code>参数来指定默认布局</p>
-<p>可以直接创建<code>.md</code>结尾的文件，最后要移动到<code>source/_posts</code>文件中。</p>
-<h2 id="布局（Layout）"><a href="#布局（Layout）" class="headerlink" title="布局（Layout）"></a>布局（Layout）</h2><p>Hexo有三种默认布局：<code>post</code>、<code>page</code>和<code>draft</code>。在创建不同类型的文件时，它们将会保存到不同的路径；而您自定义的其他布局和 <code>post</code> 相同，都将存储到<code>source/_posts</code>文件夹。</p>
-<table>
+    <url>/posts/d4fee3ae/</url>
+    <content><![CDATA[<div class="fnScope" scope="1"><p>前言</p><p>记录的是hexo的基本操作。关于如何创建文件写作，及其布局；From-Matter的参数。</p><a id="more"></a><p>全文</p><h1 id="写作">写作</h1><p>可以执行以下命令来创建一篇新文章或者新的页面</p><figure class="highlight gauss"><table><tbody><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> [layout] &lt;<span class="built_in">title</span>&gt;</span><br></pre></td></tr></tbody></table></figure><p><code>layout</code>：指定文章的布局，默认为<code>post</code>，可以通过修改<code>_config.yml</code>中的<code>default_layout</code>参数来指定默认布局</p><p>可以直接创建<code>.md</code>结尾的文件，最后要移动到<code>source/_posts</code>文件中。</p><h2 id="布局layout">布局（Layout）</h2><p>Hexo有三种默认布局：<code>post</code>、<code>page</code>和<code>draft</code>。在创建不同类型的文件时，它们将会保存到不同的路径；而您自定义的其他布局和 <code>post</code> 相同，都将存储到<code>source/_posts</code>文件夹。</p><table>
 <thead>
-<tr>
-<th align="left">布局</th>
-<th align="left">路径</th>
+<tr class="header">
+<th style="text-align: left;">布局</th>
+<th style="text-align: left;">路径</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left"><code>post</code></td>
-<td align="left"><code>source/_posts</code></td>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>post</code></td>
+<td style="text-align: left;"><code>source/_posts</code></td>
 </tr>
-<tr>
-<td align="left"><code>page</code></td>
-<td align="left"><code>source</code></td>
+<tr class="even">
+<td style="text-align: left;"><code>page</code></td>
+<td style="text-align: left;"><code>source</code></td>
 </tr>
-<tr>
-<td align="left"><code>draft</code></td>
-<td align="left"><code>source/_drafts</code></td>
+<tr class="odd">
+<td style="text-align: left;"><code>draft</code></td>
+<td style="text-align: left;"><code>source/_drafts</code></td>
 </tr>
-</tbody></table>
-<blockquote>
+</tbody>
+</table><blockquote>
 <p><strong>不要处理我的文章：就是不会被渲染成html</strong></p>
 <p>如果你不想你的文章被处理，你可以将 Front-Matter 中的<code>layout:</code> 设为 <code>false</code> 。</p>
-</blockquote>
-<h2 id="文件名称"><a href="#文件名称" class="headerlink" title="文件名称"></a>文件名称</h2><p>修改文件的创建时的默认名称，Hexo默认以标题作为文件名称，但您可编辑<code>new_post_name</code>参数来改变默认的文件名称，比如可以设置为：<code>:year-:month-:day-:title.md</code> 在创建文章时文件名是当前的年月日，这样就可以通过日期来管理文章了。</p>
-<table>
+</blockquote><h2 id="文件名称">文件名称</h2><p>修改文件的创建时的默认名称，Hexo默认以标题作为文件名称，但您可编辑<code>new_post_name</code>参数来改变默认的文件名称，比如可以设置为：<code>:year-:month-:day-:title.md</code> 在创建文章时文件名是当前的年月日，这样就可以通过日期来管理文章了。</p><table>
 <thead>
-<tr>
-<th align="left">变量</th>
-<th align="left">描述</th>
+<tr class="header">
+<th style="text-align: left;">变量</th>
+<th style="text-align: left;">描述</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left"><code>:title</code></td>
-<td align="left">标题（小写，空格将会被替换为短杠）</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>:title</code></td>
+<td style="text-align: left;">标题（小写，空格将会被替换为短杠）</td>
 </tr>
-<tr>
-<td align="left"><code>:year</code></td>
-<td align="left">建立的年份，比如， <code>2015</code></td>
+<tr class="even">
+<td style="text-align: left;"><code>:year</code></td>
+<td style="text-align: left;">建立的年份，比如， <code>2015</code></td>
 </tr>
-<tr>
-<td align="left"><code>:month</code></td>
-<td align="left">建立的月份（有前导零），比如， <code>04</code></td>
+<tr class="odd">
+<td style="text-align: left;"><code>:month</code></td>
+<td style="text-align: left;">建立的月份（有前导零），比如， <code>04</code></td>
 </tr>
-<tr>
-<td align="left"><code>:i_month</code></td>
-<td align="left">建立的月份（无前导零），比如， <code>4</code></td>
+<tr class="even">
+<td style="text-align: left;"><code>:i_month</code></td>
+<td style="text-align: left;">建立的月份（无前导零），比如， <code>4</code></td>
 </tr>
-<tr>
-<td align="left"><code>:day</code></td>
-<td align="left">建立的日期（有前导零），比如， <code>07</code></td>
+<tr class="odd">
+<td style="text-align: left;"><code>:day</code></td>
+<td style="text-align: left;">建立的日期（有前导零），比如， <code>07</code></td>
 </tr>
-<tr>
-<td align="left"><code>:i_day</code></td>
-<td align="left">建立的日期（无前导零），比如， <code>7</code></td>
+<tr class="even">
+<td style="text-align: left;"><code>:i_day</code></td>
+<td style="text-align: left;">建立的日期（无前导零），比如， <code>7</code></td>
 </tr>
-</tbody></table>
-<h2 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h2><p>特殊布局<code>draft</code>,这种布局在建立时会被保存到<code>source/_drafts</code>文件夹，可以通过<code>publish</code>命令将草稿移动到<code>souce/_posts</code>文件夹，与<code>new</code>命令的使用十分类似，都可以在命令中指定<code>layout</code>来指定布局。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">hexo publish [layout] <span class="tag">&lt;<span class="name">title</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>草稿默认不会显示在页面中，可在执行时加上<code>--draft</code>参数，或是把<code>render_drafts</code>参数设为<code>true</code>来预览草稿（修改参数后需要重启服务）。</p>
-<h2 id="模板（Scaffold）"><a href="#模板（Scaffold）" class="headerlink" title="模板（Scaffold）"></a>模板（Scaffold）</h2><p>在新建文章时，Hexo会根据<code>scaffolds</code>文件夹内相对应的文件来建立文件，例如：</p>
-<figure class="highlight haxe"><table><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="type">photo</span> <span class="string">'My Gallery'</span></span><br></pre></td></tr></table></figure>
-
-<p>在执行这行指令时，Hexo会尝试在<code>scaffolds</code>文件夹中寻找<code>photo.md</code>，并根据其内容建立文章，以下是可以在模板中使用的变量：</p>
-<table>
+</tbody>
+</table><h2 id="草稿">草稿</h2><p>特殊布局<code>draft</code>,这种布局在建立时会被保存到<code>source/_drafts</code>文件夹，可以通过<code>publish</code>命令将草稿移动到<code>souce/_posts</code>文件夹，与<code>new</code>命令的使用十分类似，都可以在命令中指定<code>layout</code>来指定布局。</p><figure class="highlight xml"><table><tbody><tr><td class="code"><pre><span class="line">hexo publish [layout] <span class="tag">&lt;<span class="name">title</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure><p>草稿默认不会显示在页面中，可在执行时加上<code>--draft</code>参数，或是把<code>render_drafts</code>参数设为<code>true</code>来预览草稿（修改参数后需要重启服务）。</p><h2 id="模板scaffold">模板（Scaffold）</h2><p>在新建文章时，Hexo会根据<code>scaffolds</code>文件夹内相对应的文件来建立文件，例如：</p><figure class="highlight haxe"><table><tbody><tr><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="type">photo</span> <span class="string">&apos;My Gallery&apos;</span></span><br></pre></td></tr></tbody></table></figure><p>在执行这行指令时，Hexo会尝试在<code>scaffolds</code>文件夹中寻找<code>photo.md</code>，并根据其内容建立文章，以下是可以在模板中使用的变量：</p><table>
 <thead>
-<tr>
-<th align="left">变量</th>
-<th align="left">描述</th>
+<tr class="header">
+<th style="text-align: left;">变量</th>
+<th style="text-align: left;">描述</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left"><code>layout</code></td>
-<td align="left">布局</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>layout</code></td>
+<td style="text-align: left;">布局</td>
 </tr>
-<tr>
-<td align="left"><code>title</code></td>
-<td align="left">标题</td>
+<tr class="even">
+<td style="text-align: left;"><code>title</code></td>
+<td style="text-align: left;">标题</td>
 </tr>
-<tr>
-<td align="left"><code>date</code></td>
-<td align="left">文件建立日期</td>
+<tr class="odd">
+<td style="text-align: left;"><code>date</code></td>
+<td style="text-align: left;">文件建立日期</td>
 </tr>
-</tbody></table>
-<h1 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h1><p>Front-matter是文件最上方<code>---</code>分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<p>以下是预定义的参数，可以在模板中使用这些参数：</p>
-<table>
-<thead>
-<tr>
-<th align="left"></th>
-<th align="left"></th>
-<th align="left"></th>
+</tbody>
+</table><h1 id="front-matter">Front-matter</h1><p>Front-matter是文件最上方<code>---</code>分隔的区域，用于指定个别文件的变量，举例来说：</p><figure class="highlight yaml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="string">/7/13</span> <span class="number">20</span><span class="string">:46:25</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></tbody></table></figure><p>以下是预定义的参数，可以在模板中使用这些参数：</p><table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">参数</td>
+<td style="text-align: left;">描述</td>
+<td style="text-align: left;">默认值</td>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left">参数</td>
-<td align="left">描述</td>
-<td align="left">默认值</td>
+<tr class="even">
+<td style="text-align: left;"><code>layout</code></td>
+<td style="text-align: left;">布局</td>
+<td style="text-align: left;">post</td>
 </tr>
-<tr>
-<td align="left"><code>layout</code></td>
-<td align="left">布局</td>
-<td align="left">post</td>
+<tr class="odd">
+<td style="text-align: left;"><code>title</code></td>
+<td style="text-align: left;">标题</td>
+<td style="text-align: left;">文章的文件名</td>
 </tr>
-<tr>
-<td align="left"><code>title</code></td>
-<td align="left">标题</td>
-<td align="left">文章的文件名</td>
+<tr class="even">
+<td style="text-align: left;"><code>date</code></td>
+<td style="text-align: left;">建立日期</td>
+<td style="text-align: left;">文件建立日期</td>
 </tr>
-<tr>
-<td align="left"><code>date</code></td>
-<td align="left">建立日期</td>
-<td align="left">文件建立日期</td>
+<tr class="odd">
+<td style="text-align: left;"><code>updated</code></td>
+<td style="text-align: left;">更新日期</td>
+<td style="text-align: left;">文件更新日期</td>
 </tr>
-<tr>
-<td align="left"><code>updated</code></td>
-<td align="left">更新日期</td>
-<td align="left">文件更新日期</td>
+<tr class="even">
+<td style="text-align: left;"><code>comments</code></td>
+<td style="text-align: left;">开启文章的评论功能（需要插件）</td>
+<td style="text-align: left;">true</td>
 </tr>
-<tr>
-<td align="left"><code>comments</code></td>
-<td align="left">开启文章的评论功能（需要插件）</td>
-<td align="left">true</td>
+<tr class="odd">
+<td style="text-align: left;"><code>tags</code></td>
+<td style="text-align: left;">标签（不适用于分页）</td>
+<td style="text-align: left;"></td>
 </tr>
-<tr>
-<td align="left"><code>tags</code></td>
-<td align="left">标签（不适用于分页）</td>
-<td align="left"></td>
+<tr class="even">
+<td style="text-align: left;"><code>categories</code></td>
+<td style="text-align: left;">分类（不适用于分页）</td>
+<td style="text-align: left;"></td>
 </tr>
-<tr>
-<td align="left"><code>categories</code></td>
-<td align="left">分类（不适用于分页）</td>
-<td align="left"></td>
+<tr class="odd">
+<td style="text-align: left;"><code>permalink</code></td>
+<td style="text-align: left;">覆盖文章网址</td>
+<td style="text-align: left;"></td>
 </tr>
-<tr>
-<td align="left"><code>permalink</code></td>
-<td align="left">覆盖文章网址</td>
-<td align="left"></td>
+<tr class="even">
+<td style="text-align: left;"><code>keywords</code></td>
+<td style="text-align: left;">仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
+<td style="text-align: left;"></td>
 </tr>
-<tr>
-<td align="left"><code>keywords</code></td>
-<td align="left">仅用于 meta 标签和 Open Graph 的关键词（不推荐使用）</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<h2 id="分类和标签"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签</h2><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。分类具有顺序性和层次性，而标签没有顺序和层次。</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Diary</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">PS3</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Games</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<h3 id="分类方法的分歧"><a href="#分类方法的分歧" class="headerlink" title="分类方法的分歧"></a>分类方法的分歧</h3><p>Hexo 不支持指定多个同级分类。</p>
+</tbody>
+</table><h2 id="分类和标签">分类和标签</h2><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。分类具有顺序性和层次性，而标签没有顺序和层次。</p><figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Diary</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">PS3</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Games</span></span><br></pre></td></tr></tbody></table></figure><blockquote>
+<h3 id="分类方法的分歧">分类方法的分歧</h3>
+<p>Hexo 不支持指定多个同级分类。</p>
 <p>下面的指定方法：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">&gt;categories:</span></span><br><span class="line"> <span class="bullet">-</span> <span class="string">Diary</span></span><br><span class="line"> <span class="bullet">-</span> <span class="string">Life</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><span class="line"><span class="string">&gt;categories:</span></span><br><span class="line"> <span class="bullet">-</span> <span class="string">Diary</span></span><br><span class="line"> <span class="bullet">-</span> <span class="string">Life</span></span><br></pre></td></tr></tbody></table></figure>
 <p>会使分类 <code>Lift</code> 成为 <code>Diary</code> 的子分类，而不是并列分类。</p>
 <p><strong>解决办法：</strong></p>
 <p>如果你需要为文章添加多个分类，可以尝试一下 <code>list</code> 中的方法</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">categories:</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">- [Diary, PlayStation]</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">- [Diary, Games]</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">- [Life]</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight shell"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">categories:</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">- [Diary, PlayStation]</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">- [Diary, Games]</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">- [Life]</span></span><br></pre></td></tr></tbody></table></figure>
 <p>此时这篇文章同时包含三个分类 <code>Diary</code> 和 <code>PlayStation</code> 都是父分类 <code>Diary</code> 的子分类，同时 <code>Life</code> 是一个没有子分类的分类。</p>
-</blockquote>
-<h2 id="JSON-Front-matter"><a href="#JSON-Front-matter" class="headerlink" title="JSON Front-matter"></a>JSON Front-matter</h2><p>除了YAML之外，也可以使用JSON格式来编写 Front-matter，只要将 <code>---</code> 换成 <code>;;;</code> 即可。</p>
-<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="string">"title"</span>: <span class="string">"Hello World"</span>,</span><br><span class="line"><span class="string">"date"</span>: <span class="string">"2019/12/19 20:46:25"</span></span><br><span class="line"><span class="comment">;;;</span></span><br></pre></td></tr></table></figure>]]></content>
+</blockquote><h2 id="json-front-matter">JSON Front-matter</h2><p>除了YAML之外，也可以使用JSON格式来编写 Front-matter，只要将 <code>---</code> 换成 <code>;;;</code> 即可。</p><figure class="highlight mipsasm"><table><tbody><tr><td class="code"><pre><span class="line"><span class="string">&quot;title&quot;</span>: <span class="string">&quot;Hello World&quot;</span>,</span><br><span class="line"><span class="string">&quot;date&quot;</span>: <span class="string">&quot;2019/12/19 20:46:25&quot;</span></span><br><span class="line"><span class="comment">;;;</span></span><br></pre></td></tr></tbody></table></figure><script src="https://unpkg.com/tippy.js@2.0.2/dist/tippy.all.min.js"></script><script src="/js/attachTooltips.js"></script><link rel="stylesheet" href="/css/tippy.css"></div>]]></content>
       <categories>
         <category>笔记</category>
         <category>Hexo折腾</category>

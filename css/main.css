@@ -147,7 +147,7 @@ template {
   display: none;
 }
 ::selection {
-  background: #262a30;
+  background: #49b1f5;
   color: #fff;
 }
 html,
@@ -157,8 +157,8 @@ body {
 body {
   background: #eee;
   color: #555;
-  font-family: 'Helvetica', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 0.95em;
+  font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1.065em;
   line-height: 2;
 }
 @media (max-width: 991px) {
@@ -173,7 +173,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Amita', 'Helvetica', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Amita', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -264,7 +264,7 @@ table {
   border-spacing: 0;
   font-size: 0.875em;
   margin: 0 0 20px 0;
-  width: 100%;
+  width: normal;
 }
 tbody tr:nth-of-type(odd) {
   background: #f9f9f9;
@@ -294,9 +294,9 @@ td {
 }
 .btn {
   background: #fff;
-  border: 2px solid #555;
+  border: 2px solid #49b1f5;
   border-radius: 2px;
-  color: #555;
+  color: #49b1f5;
   display: inline-block;
   font-size: 0.875em;
   line-height: 2;
@@ -308,8 +308,8 @@ td {
   transition-timing-function: ease-in-out;
 }
 .btn:hover {
-  background: #222;
-  border-color: #222;
+  background: #49b1f5;
+  border-color: #49b1f5;
   color: #fff;
 }
 .btn + .btn {
@@ -407,7 +407,7 @@ code {
   font-family: 'PT Mono', consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
 }
 code {
-  background: #eee;
+  background: #edf1ff;
   border-radius: 3px;
   color: #555;
   padding: 2px 4px;
@@ -432,7 +432,7 @@ code {
   padding: 0;
 }
 .highlight figcaption {
-  background: #eee;
+  background: #edf1ff;
   color: #4d4d4c;
   font-size: 0.875em;
   line-height: 1.2;
@@ -920,8 +920,8 @@ pre .javascript .function {
   margin: 0.1em 0.2em;
 }
 .comment-button-group .comment-button.active {
-  background: #222;
-  border-color: #222;
+  background: #49b1f5;
+  border-color: #49b1f5;
   color: #fff;
 }
 .comment-position {
@@ -1004,7 +1004,7 @@ pre .javascript .function {
 }
 .site-title {
   display: inline-block;
-  font-family: 'Lobster Two', 'Helvetica', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Lobster Two', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1257,7 +1257,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #5dfff9;
+  background: #09cda3;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1593,7 +1593,7 @@ pre .javascript .function {
   }
 }
 .post-body {
-  font-family: 'Roboto Slab', 'Helvetica', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -1895,7 +1895,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   color: #999;
-  font-family: 'Roboto Slab', 'Helvetica', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 0.75em;
   margin: 3px 0 60px 0;
   text-align: center;
@@ -2393,6 +2393,10 @@ ul.breadcrumb li + li:last-child {
   line-height: 2.4;
   margin: 0;
 }
+.has-jax {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 .header {
   margin: 0 auto;
   position: relative;
@@ -2764,6 +2768,9 @@ ul.breadcrumb li + li:last-child {
   border-bottom: 1px solid #eee;
 }
 .post-body h3 {
+  border-bottom: 1px solid #eee;
+}
+.post-body h4 {
   border-bottom: 1px dotted #eee;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2818,4 +2825,108 @@ ul.breadcrumb li + li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+/*******************首页样式*****************************/
+.sidebar {
+  box-shadow: inset 2px 2px 40px #bdb2b2;
+}
+.site-meta {
+  background: url("https://raw.githubusercontent.com/vtkdhhgg/Figure-bed/master//20200208124135.jpg");
+  background-size: 100%;
+}
+.brand,
+.site-subtitle {
+  color: #000;
+}
+.menu .menu-item a:hover {
+  background: rgba(137,205,249,0.5);
+  color: #f5f7f9;
+}
+.menu-item-active a {
+  background: rgba(137,205,249,0.5);
+  color: #f5f7f9;
+}
+.menu-item-active a {
+  background: rgba(0,86,216,0.75);
+}
+.post-block {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+  box-shadow: 0 0 14px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 14px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 14px rgba(0,0,0,0.5);
+}
+.post-block + .post-block {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+  box-shadow: 0 0 14px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 14px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 14px rgba(0,0,0,0.5);
+}
+.post-button {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.posts-expand .post-title-link::before {
+  background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
+}
+.posts-expand ..posts-expand .post-body h2,
+h3,
+h4,
+h5,
+h6 {
+  border-left: 0.4em solid #657b83;
+  padding-left: 1em;
+}
+.post-body h1 {
+  border-left: 0.5em solid #657b83;
+  padding-left: 1em;
+}
+a,
+span.exturl {
+  overflow-wrap: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  border-bottom: 1px solid #949494;
+  cursor: pointer;
+}
+a:hover,
+span.exturl:hover {
+  color: rgba(230,66,66,0.89);
+  border-bottom-color: #222;
+}
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 0.3em solid #ff1700;
+  background-color: rgba(249,249,249,0);
+  list-style: none;
+}
+.followme {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 0.3em solid #ff1700;
+  background-color: rgba(249,249,249,0);
+  color: #000;
+  list-style: none;
+}
+.followme .social-list {
+  display: inline-block;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+/*******************其他样式*****************************/
+hr {
+  margin: 50px 0px;
+  height: 1px;
+  border: none;
+  background-color: transparent;
+  background-image: linear-gradient(to right, transparent, rgba(0,86,216,0.75), transparent);
 }
